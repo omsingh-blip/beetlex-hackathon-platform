@@ -1,0 +1,258 @@
+import type { Event } from "@/types/event";
+
+export const events: Event[] = [
+  {
+    id: "hack-ai-2026",
+    slug: "hack-ai-2026",
+    title: "Hack AI 2026",
+    tagline: "Build the future of autonomous intelligence",
+    description:
+      "Create cutting-edge AI applications that solve real-world challenges.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    startDate: "2026-08-12",
+    endDate: "2026-08-14",
+    registrationDeadline: "2026-08-01",
+    location: "Global",
+    mode: "online",
+    status: "registration_open",
+    prizePool: 100000,
+    tracks: ["AI"],
+    participantsCount: 1420,
+    teamCount: 310,
+    organizer: "BeetleX",
+  },
+
+  {
+    id: "web3-buildathon",
+    slug: "web3-buildathon",
+    title: "Web3 Buildathon",
+    tagline: "Ship decentralized products at scale",
+    description:
+      "Build innovative blockchain applications for the next internet.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1639762681057-408e52192e55",
+    startDate: "2026-09-20",
+    endDate: "2026-09-22",
+    registrationDeadline: "2026-09-10",
+    location: "Singapore",
+    mode: "hybrid",
+    status: "upcoming",
+    prizePool: 75000,
+    tracks: ["Web3"],
+    participantsCount: 950,
+    teamCount: 220,
+    organizer: "ChainLabs",
+  },
+
+  {
+    id: "fintech-fusion",
+    slug: "fintech-fusion",
+    title: "FinTech Fusion",
+    tagline: "Reinvent financial accessibility",
+    description:
+      "Create products that transform payments, lending, and banking.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1559526324-593bc073d938",
+    startDate: "2026-07-18",
+    endDate: "2026-07-20",
+    registrationDeadline: "2026-07-10",
+    location: "London",
+    mode: "offline",
+    status: "live",
+    prizePool: 60000,
+    tracks: ["FinTech"],
+    participantsCount: 670,
+    teamCount: 150,
+    organizer: "Finverse",
+  },
+
+  {
+    id: "healthhack-global",
+    slug: "healthhack-global",
+    title: "HealthHack Global",
+    tagline: "Innovate for better healthcare outcomes",
+    description:
+      "Design technology solutions that improve healthcare systems.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+    startDate: "2026-06-15",
+    endDate: "2026-06-17",
+    registrationDeadline: "2026-06-01",
+    location: "Berlin",
+    mode: "hybrid",
+    status: "judging",
+    prizePool: 50000,
+    tracks: ["HealthTech"],
+    participantsCount: 520,
+    teamCount: 118,
+    organizer: "MediTech Labs",
+  },
+
+  {
+    id: "open-innovation-summit",
+    slug: "open-innovation-summit",
+    title: "Open Innovation Summit",
+    tagline: "Solve tomorrow's challenges together",
+    description:
+      "Cross-disciplinary innovation focused on societal impact.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1511578314322-379afb476865",
+    startDate: "2026-05-05",
+    endDate: "2026-05-07",
+    registrationDeadline: "2026-04-20",
+    location: "Amsterdam",
+    mode: "offline",
+    status: "completed",
+    prizePool: 40000,
+    tracks: ["Open Innovation"],
+    participantsCount: 890,
+    teamCount: 210,
+    organizer: "InnovateX",
+  },
+
+  {
+    id: "agentic-ai-arena",
+    slug: "agentic-ai-arena",
+    title: "Agentic AI Arena",
+    tagline: "Autonomous systems for real-world impact",
+    description: "Build AI agents that reason, plan, and execute tasks.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485",
+    startDate: "2026-10-03",
+    endDate: "2026-10-05",
+    registrationDeadline: "2026-09-25",
+    location: "Global",
+    mode: "online",
+    status: "registration_open",
+    prizePool: 120000,
+    tracks: ["AI"],
+    participantsCount: 1840,
+    teamCount: 430,
+    organizer: "BeetleX",
+  },
+
+  {
+    id: "defi-disrupt",
+    slug: "defi-disrupt",
+    title: "DeFi Disrupt",
+    tagline: "Next-generation decentralized finance",
+    description: "Create secure and scalable DeFi protocols.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1640161704729-cbe966a08476",
+    startDate: "2026-11-10",
+    endDate: "2026-11-12",
+    registrationDeadline: "2026-10-30",
+    location: "Dubai",
+    mode: "hybrid",
+    status: "upcoming",
+    prizePool: 90000,
+    tracks: ["Web3", "FinTech"],
+    participantsCount: 1030,
+    teamCount: 240,
+    organizer: "CryptoHub",
+  },
+
+  {
+    id: "smart-health-ai",
+    slug: "smart-health-ai",
+    title: "Smart Health AI",
+    tagline: "AI-powered healthcare innovation",
+    description:
+      "Develop AI-driven tools that improve diagnostics and care.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b",
+    startDate: "2026-12-01",
+    endDate: "2026-12-03",
+    registrationDeadline: "2026-11-20",
+    location: "Toronto",
+    mode: "online",
+    status: "registration_open",
+    prizePool: 70000,
+    tracks: ["AI", "HealthTech"],
+    participantsCount: 880,
+    teamCount: 195,
+    organizer: "CareLabs",
+  },
+
+  {
+    id: "future-finance",
+    slug: "future-finance",
+    title: "Future Finance Hackathon",
+    tagline: "Building the next era of finance",
+    description:
+      "Experiment with digital banking, AI finance, and payments.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
+    startDate: "2026-09-05",
+    endDate: "2026-09-07",
+    registrationDeadline: "2026-08-25",
+    location: "New York",
+    mode: "offline",
+    status: "upcoming",
+    prizePool: 65000,
+    tracks: ["FinTech"],
+    participantsCount: 710,
+    teamCount: 165,
+    organizer: "NovaBank",
+  },
+
+  {
+    id: "genesis-build",
+    slug: "genesis-build",
+    title: "Genesis Build",
+    tagline: "Launch startup-grade products in 48 hours",
+    description:
+      "A fast-paced innovation sprint for ambitious builders.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    startDate: "2026-07-30",
+    endDate: "2026-08-01",
+    registrationDeadline: "2026-07-20",
+    location: "Bangalore",
+    mode: "hybrid",
+    status: "registration_open",
+    prizePool: 55000,
+    tracks: ["Open Innovation", "AI"],
+    participantsCount: 1200,
+    teamCount: 280,
+    organizer: "BeetleX",
+  },
+
+  ...Array.from({ length: 20 }, (_, index) => ({
+    id: `innovation-lab-${index + 1}`,
+    slug: `innovation-lab-${index + 1}`,
+    title: `Innovation Lab ${index + 1}`,
+    tagline: "Build. Launch. Impact.",
+    description:
+      "Collaborate with developers, designers, and founders to create breakthrough solutions.",
+    bannerImage:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    startDate: "2026-08-01",
+    endDate: "2026-08-03",
+    registrationDeadline: "2026-07-20",
+    location: "Global",
+    mode: ["online", "offline", "hybrid"][
+      index % 3
+    ] as Event["mode"],
+    status: [
+      "upcoming",
+      "registration_open",
+      "live",
+      "judging",
+      "completed",
+    ][index % 5] as Event["status"],
+    prizePool: 25000 + index * 5000,
+    tracks: [
+      ["AI"],
+      ["Web3"],
+      ["FinTech"],
+      ["HealthTech"],
+      ["Open Innovation"],
+    ][index % 5],
+    participantsCount: 300 + index * 40,
+    teamCount: 70 + index * 8,
+    organizer: "Innovation Labs",
+  })),
+];
+
