@@ -1,5 +1,6 @@
 import  Button  from "@/components/ui/Button";
 import type { Event } from "@/types/event";
+import { Link } from "react-router-dom";
 
 type EventHeroProps = {
   event: Event;
@@ -35,9 +36,11 @@ export function EventHero({ event }: EventHeroProps) {
           <span>{event.teamCount} Teams</span>
         </div>
 
-        <Button className="mt-6">
-          Register Now
-        </Button>
+        <Link to={`/register/${event.id}`}>
+  <Button>
+    Register Now
+  </Button>
+</Link>
       </div>
     </section>
   );
