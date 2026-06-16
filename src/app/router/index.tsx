@@ -5,6 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 import LandingPage from "@/pages/Landing";
 
 import EventListingPage from "@/pages/events/EventListingPage";
+import EventDetailsPage from "@/pages/events/EventDetailsPage";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
       {
         path: "events",
         element: <EventListingPage />,
+      },
+      {
+        path: "events/:slug",
+        element: <EventDetailsPage />,
       },
     ],
   },

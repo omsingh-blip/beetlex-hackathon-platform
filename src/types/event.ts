@@ -12,6 +12,18 @@ export type EventTrack =
   | "HealthTech"
   | "Open Innovation";
 
+export interface EventTimelineItem {
+  id: string;
+  title: string;
+  date: string;
+}
+
+export interface EventFaq {
+  id: string;
+  question: string;
+  answer: string;
+}
+
 export interface Event {
   id: string;
   slug: string;
@@ -40,4 +52,34 @@ export interface Event {
   teamCount: number;
 
   organizer: string;
+
+  // Event Details Page
+  requirements?: string[];
+  eligibility?: string[];
+  rules?: string[];
+
+  timeline?: EventTimelineItem[];
+
+  faqs?: EventFaq[];
+}
+
+
+export interface EventTimelineItem {
+  id: string;
+  title: string;
+  date: string;
+}
+
+export interface EventFaq {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface EventDetails {
+  requirements: string[];
+  eligibility: string[];
+  rules: string[];
+  timeline: EventTimelineItem[];
+  faqs: EventFaq[];
 }
