@@ -7,6 +7,7 @@ import LandingPage from "@/pages/Landing";
 import EventListingPage from "@/pages/events/EventListingPage";
 import EventDetailsPage from "@/pages/events/EventDetailsPage";
 import RegistrationPage from "@/pages/register/RegistrationPage";
+import TeamDashboardPage from "@/pages/dashboard/TeamDashboardPage";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
      {
   path: "register/:eventId",
   element: <RegistrationPage />,
+},
+{
+  path: "/dashboard/team",
+  element: <TeamDashboardPage />,
 }
     ],
   },
