@@ -8,6 +8,7 @@ import EventListingPage from "@/pages/events/EventListingPage";
 import EventDetailsPage from "@/pages/events/EventDetailsPage";
 import RegistrationPage from "@/pages/register/RegistrationPage";
 import TeamDashboardPage from "@/pages/dashboard/TeamDashboardPage";
+import ProjectSubmissionPage from "@/pages/submission/ProjectSubmissionPage";
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,11 @@ export const router = createBrowserRouter([
 {
   path: "/dashboard/team",
   element: <TeamDashboardPage />,
+},
+
+{
+  path: "submit/:eventId",
+  element: <ProjectSubmissionPage />,
 }
     ],
   },
