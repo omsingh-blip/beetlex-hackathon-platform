@@ -10,6 +10,7 @@ import RegistrationPage from "@/pages/register/RegistrationPage";
 import TeamDashboardPage from "@/pages/dashboard/TeamDashboardPage";
 import ProjectSubmissionPage from "@/pages/submission/ProjectSubmissionPage";
 import JudgeDashboardPage from "@/pages/dashboard/JudgeDashboardPage";
+import OrganizerDashboardPage from "@/pages/dashboard/OrganizerDashboardPage";
 
 export const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
         path: "/dashboard/judge",
         element: <JudgeDashboardPage />,
       },
+      {
+  path: "/dashboard/organizer",
+  element: <OrganizerDashboardPage />,
+}
     ],
   },
 ]);

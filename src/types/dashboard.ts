@@ -57,3 +57,28 @@ export type JudgeDashboardData = {
   projects: JudgeProject[];
   recentScores: RecentScore[];
 };
+
+export interface OrganizerEvent {
+  id: string;
+  event: string;
+  registrations: number;
+  submissions: number;
+  status: "Draft" | "Active" | "Completed";
+}
+
+export interface ActivityItem {
+  id: string;
+  message: string;
+  time: string;
+}
+
+export interface OrganizerDashboardData {
+  totalEvents: number;
+  totalParticipants: number;
+  totalSubmissions: number;
+  activeHackathons: number;
+  completion: number;
+
+  events: OrganizerEvent[];
+  activities: ActivityItem[];
+}
