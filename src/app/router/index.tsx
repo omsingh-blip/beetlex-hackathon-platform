@@ -9,6 +9,7 @@ import EventDetailsPage from "@/pages/events/EventDetailsPage";
 import RegistrationPage from "@/pages/register/RegistrationPage";
 import TeamDashboardPage from "@/pages/dashboard/TeamDashboardPage";
 import ProjectSubmissionPage from "@/pages/submission/ProjectSubmissionPage";
+import JudgeDashboardPage from "@/pages/dashboard/JudgeDashboardPage";
 
 export const router = createBrowserRouter([
   {
@@ -27,19 +28,24 @@ export const router = createBrowserRouter([
         path: "events/:slug",
         element: <EventDetailsPage />,
       },
-     {
-  path: "register/:eventId",
-  element: <RegistrationPage />,
-},
-{
-  path: "/dashboard/team",
-  element: <TeamDashboardPage />,
-},
+      {
+        path: "register/:eventId",
+        element: <RegistrationPage />,
+      },
+      {
+        path: "/dashboard/team",
+        element: <TeamDashboardPage />,
+      },
 
-{
-  path: "submit/:eventId",
-  element: <ProjectSubmissionPage />,
-}
+      {
+        path: "submit/:eventId",
+        element: <ProjectSubmissionPage />,
+      },
+
+      {
+        path: "/dashboard/judge",
+        element: <JudgeDashboardPage />,
+      },
     ],
   },
 ]);

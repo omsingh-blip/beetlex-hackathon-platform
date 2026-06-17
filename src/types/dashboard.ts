@@ -32,3 +32,28 @@ export interface SubmissionStatus {
   title: string;
   progress: number;
 }
+
+export type JudgeProject = {
+  id: string;
+  project: string;
+  team: string;
+  track: string;
+  status: "Pending" | "Reviewed";
+};
+
+export type RecentScore = {
+  id: string;
+  project: string;
+  score: number;
+};
+
+export type JudgeDashboardData = {
+  assignedProjects: number;
+  reviewedProjects: number;
+  pendingReviews: number;
+  averageScore: number;
+  completion: number;
+
+  projects: JudgeProject[];
+  recentScores: RecentScore[];
+};

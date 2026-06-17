@@ -4,7 +4,7 @@ import HeroVideo from "./HeroVideo";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-screen pt-28">
+    <section className="relative overflow-hidden min-h-screen pt-8">
       <HeroBackground />
 
       <div className="absolute left-20 top-20 h-96 w-96 rounded-full bg-lime-400/10 blur-3xl" />
