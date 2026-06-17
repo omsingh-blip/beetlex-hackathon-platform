@@ -1,6 +1,7 @@
 import Button from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import StatsCard from "./StatsCard";
+import { Link } from "react-router-dom";
 
 export default function HeroContent() {
   return (
@@ -37,8 +38,19 @@ export default function HeroContent() {
       </p>
 
       <div className="mt-8 flex flex-wrap gap-4">
-        <Button>Register Now</Button>
-        <Button variant="secondary">Explore Events</Button>
+       <div className="flex flex-wrap justify-center gap-4">
+  <Link to="/register/1">
+    <Button>
+      Register Now
+    </Button>
+  </Link>
+
+  <Link to="/events">
+    <Button variant="secondary">
+      Explore Events
+    </Button>
+  </Link>
+</div>
       </div>
 
       <div className="mt-12 grid grid-cols-3 gap-4">
