@@ -1,3 +1,4 @@
+import {Link } from "react-router-dom";
 import { ArrowRight, Rocket } from "lucide-react";
 
 import Button from "@/components/ui/Button";
@@ -98,27 +99,31 @@ export default function CTASection() {
                 sm:flex-row
               "
             >
-              <Button
-                className="
-                  bg-primary
-                  text-black
-                "
-              >
-                Register Now
-              </Button>
+              <Link to="/events">
+  <Button
+    className="
+      bg-primary
+      text-black
+    "
+  >
+    Register Now
+  </Button>
+</Link>
 
-              <Button
-                variant="outline"
-                className="
-                  flex
-                  items-center
-                  gap-2
-                "
-              >
-                Explore Events
+<Link to="/events">
+  <Button
+    variant="outline"
+    className="
+      flex
+      items-center
+      gap-2
+    "
+  >
+    Explore Events
 
-                <ArrowRight size={16} />
-              </Button>
+    <ArrowRight size={16} />
+  </Button>
+</Link> 
             </div>
           </div>
         </div>

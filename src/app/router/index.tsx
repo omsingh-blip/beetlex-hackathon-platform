@@ -11,6 +11,7 @@ import TeamDashboardPage from "@/pages/dashboard/TeamDashboardPage";
 import ProjectSubmissionPage from "@/pages/submission/ProjectSubmissionPage";
 import JudgeDashboardPage from "@/pages/dashboard/JudgeDashboardPage";
 import OrganizerDashboardPage from "@/pages/dashboard/OrganizerDashboardPage";
+import NotFoundPage from "@/pages/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -50,7 +51,11 @@ export const router = createBrowserRouter([
       {
   path: "/dashboard/organizer",
   element: <OrganizerDashboardPage />,
-}
+},
+{
+  path: "*",
+  element: <NotFoundPage />,
+},
     ],
   },
 ]);

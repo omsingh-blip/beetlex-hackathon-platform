@@ -27,7 +27,7 @@ const tracks = [
 
 export default function PrizeTracks() {
   return (
-    <section className="py-24">
+    <section id="prizes" className="py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
           <span className="text-lime-400">

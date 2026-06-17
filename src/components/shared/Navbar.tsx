@@ -47,43 +47,52 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-8 lg:flex">
+          <a
+            href="/"
+            className="text-muted transition-colors hover:text-primary"
+          >
+            Home
+          </a>
+
           <Link
             to="/events"
-            className="
-              text-muted
-              transition-colors
-              hover:text-primary
-            "
+            className="text-muted transition-colors hover:text-primary"
           >
             Events
           </Link>
 
-          <Link
-            to="/leaderboard"
-            className="
-              text-muted
-              transition-colors
-              hover:text-primary
-            "
+          <a
+            href="/#timeline"
+            className="text-muted transition-colors hover:text-primary"
           >
-            Leaderboard
-          </Link>
+            Timeline
+          </a>
+
+          <a
+            href="/#prizes"
+            className="text-muted transition-colors hover:text-primary"
+          >
+            Prizes
+          </a>
+
+          <a
+            href="/#faq"
+            className="text-muted transition-colors hover:text-primary"
+          >
+            FAQ
+          </a>
         </nav>
 
         {/* Actions */}
         <div className="flex items-center gap-3">
-          {/* Add ThemeToggle here later */}
-
-          <Button
-            variant="ghost"
-            className="hidden lg:flex"
+          <Link
+            to="/events"
+            className="hidden lg:block"
           >
-            Login
-          </Button>
-
-          <Button className="hidden lg:flex">
-            Register
-          </Button>
+            <Button>
+              Register Now
+            </Button>
+          </Link>
 
           <button
             className="
