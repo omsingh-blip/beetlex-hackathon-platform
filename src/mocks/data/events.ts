@@ -1,4 +1,4 @@
-import type { Event } from "@/types/event";
+import type { Event, EventTrack } from "@/types/event";
 
 export const events: Event[] = [
   {
@@ -219,22 +219,36 @@ export const events: Event[] = [
     organizer: "BeetleX",
   },
 
-  ...Array.from({ length: 20 }, (_, index) => ({
+ ...Array.from({ length: 20 }, (_, index): Event => {
+  const tracks: EventTrack[] = [
+    ["AI"],
+    ["Web3"],
+    ["FinTech"],
+    ["HealthTech"],
+    ["Open Innovation"],
+  ][index % 5] as EventTrack[];
+
+  return {
     id: `innovation-lab-${index + 1}`,
     slug: `innovation-lab-${index + 1}`,
     title: `Innovation Lab ${index + 1}`,
     tagline: "Build. Launch. Impact.",
     description:
       "Collaborate with developers, designers, and founders to create breakthrough solutions.",
+
     bannerImage:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+
     startDate: "2026-08-01",
     endDate: "2026-08-03",
     registrationDeadline: "2026-07-20",
+
     location: "Global",
+
     mode: ["online", "offline", "hybrid"][
       index % 3
     ] as Event["mode"],
+
     status: [
       "upcoming",
       "registration_open",
@@ -242,17 +256,16 @@ export const events: Event[] = [
       "judging",
       "completed",
     ][index % 5] as Event["status"],
+
     prizePool: 25000 + index * 5000,
-    tracks: [
-      ["AI"],
-      ["Web3"],
-      ["FinTech"],
-      ["HealthTech"],
-      ["Open Innovation"],
-    ][index % 5],
+
+    tracks,
+
     participantsCount: 300 + index * 40,
     teamCount: 70 + index * 8,
+
     organizer: "Innovation Labs",
-  })),
+  };
+}),
 ];
 
