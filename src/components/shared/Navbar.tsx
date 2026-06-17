@@ -31,15 +31,22 @@ export default function Navbar() {
           to="/"
           className="flex items-center gap-3"
         >
-          <div
-            className="
-              h-10
-              w-10
-              rounded-xl
-              bg-primary
-              shadow-[0_0_25px_rgba(215,255,0,0.4)]
-            "
-          />
+          
+         <div
+  className="
+    flex items-center justify-center
+    h-10 w-10
+    rounded-xl
+    bg-primary
+    shadow-[0_0_25px_rgba(215,255,0,0.5)]
+  "
+>
+  <img
+    src="/favicon1.png"
+    alt="BeetleX Logo"
+    className="h-12 w-12 object-contain"
+  />
+</div>
 
           <span className="text-xl font-bold text-text">
             BeetleX
